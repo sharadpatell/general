@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h2>Javascript Functions</h2>
+    <script>
+        function doStuff(){
+            var mystring = "here is a string of text";
+            var upperstr = mystring.toUpperCase();
+            console.log(mystring);
+            console.log(upperstr);
+        }
+        doStuff();
+
+
+        function chknum(){
+            var username = prompt("What's your name?", "");
+        console.log(`Hello ${username}, Welcome to DDU-GKY`);
+
+        var usernum = prompt("enter whole number", "");
+        if(usernum<10){
+            console.log("you entered a number less than 10");
+            for(var i = 0; i<10; i++){
+                if(i == usernum){
+                    console.log(`here is a ${i} <-- this is your number`)
+                }else{
+                console.log(`it is a series ${i}`)
+                }
+            }
+        }else if(usernum>10){
+            console.log("you entered a big number");
+        }else{
+            console.log("ERROR: didn't enter number");
+        }
+        }
+        <!-- chknum(); -->
+
+
+        function addition(n1, n2){
+            var sum = n1 + n2;
+            console.log(sum);
+        }
+        addition(5, 7)
+
+        function randomint(min, max){
+            var value = max - min + 1;
+            var randonnum = Math.random();
+            var radomval = randonnum * value;
+            var roundrandval = Math.floor(radomval);
+            var finalnum = min + roundrandval;
+
+            console.log(finalnum);
+        }
+        randomint(5,10)
+
+        var greeting = function(){
+            console.log("hello from sharad side...")
+        }
+        greeting();
+        
+    </script>
+</body>
+</html>

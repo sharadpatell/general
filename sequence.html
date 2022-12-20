@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Working with Sequence, Selection and Loop</h1>
+
+    <script>
+        var mystring = "I am really hungry for some";
+        console.log(mystring);
+
+        var myupperstring = mystring.toUpperCase();
+        console.log(myupperstring);
+
+        var reallylocation = mystring.search('really');
+        console.log(reallylocation);
+
+        var specailword = mystring.substr(reallylocation, 6);
+        console.log(specailword);
+
+        var finalword = specailword.toUpperCase();
+        console.log(finalword);
+
+        var newstring = mystring.replace('really', finalword);
+        console.log(newstring);
+
+
+        var foods = ["cheese", "pie", "lunch", "breakfast"];
+
+        var hungrystr = "I am very hungry get me some";
+
+        /* for (var item = 0; item<foods.length; item++ ){
+            console.log(`${hungrystr} ${foods[item]}`);
+        } */
+
+        /* for(var eachitem of foods){
+            console.log(`${hungrystr} ${eachitem}`);
+        }*/ 
+
+       /* for (var i = 0; i<foods.length; i++){
+            var remainder = i%2;
+
+            if(remainder === 0){
+                var foodupper = foods[i].toUpperCase();
+                console.log(`${hungrystr} ${foodupper}`);
+            }
+            else{
+                console.log(`${hungrystr} ${foods[i]}`);
+            }
+        }
+        */
+
+        for (var i= 0; i<foods.length; i++){
+            //cheking if the incrementor is even or not
+            if(i%2 == 0){
+                //if it is even then making the array element to uppercase
+                console.log(`${hungrystr} ${foods[i].toUpperCase()} \n`);
+            }
+            else{
+                //if it's odd then keeping it lowercase
+                console.log(`${hungrystr} ${foods[i]} \n`);
+            }
+        }
+    </script>
+</body>
+</html>

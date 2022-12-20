@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>
+</head>
+<body>
+    <h1> Loops in JS</h1>
+    
+    <script>
+       for (var i = 0; i<10; i++ ){
+        console.log(i);
+       } 
+
+       var food = ["grapes","cheese", "bread", "olives"]
+
+        for( var eachitem of food){
+            console.log(eachitem);
+        }
+
+        var statement = "A string can be treated as a array in javascript";
+
+        for(var i= 0; i<statement.length; i++){
+            console.log(statement[i]);
+        }
+
+
+        var incrementor = 0;
+        var text = "";
+
+        while(incrementor < 10){
+            text += "The incrementor has gone up to " + incrementor + "\n";
+            incrementor++;
+        }
+        console.log(text);
+
+        var i = 0;
+        var sq = "";
+
+        while(i < 10){
+            sq += `The incrementor is ${i}, the incrementor squared is ${i * i} \n`;
+            i++;
+        }
+        console.log(sq);
+
+    </script>
+</body>
+</html>

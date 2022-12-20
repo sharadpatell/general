@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Syntax and methods</title>
+</head>
+<body>
+    <h1>DOM examples</h1>
+    <div id="special">
+    <p >Here is a paragraph and changing its color by javascript</p>
+    <p>second</p>
+    <p>third</p>
+    <p>fourth</p>
+  </div>
+    <script>
+      var text = document.querySelectorAll('#special p');
+      for (var i = 0; i<text.length; i++){
+        text[i].style.color = "red";
+      }
+    </script>
+</body>
+</html>
